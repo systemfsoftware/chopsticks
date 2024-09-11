@@ -1,4 +1,4 @@
-import { BuildBlockMode, defaultLogger, genesisSchema, isUrl } from '@acala-network/chopsticks-core'
+import { BuildBlockMode, defaultLogger, genesisSchema, isUrl } from '@systemfsoftware/chopsticks-core'
 import { HexString } from '@polkadot/util/types'
 import { Options } from 'yargs'
 import { ZodNativeEnum, ZodRawShape, ZodTypeAny, z } from 'zod'

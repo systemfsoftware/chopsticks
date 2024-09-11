@@ -5,7 +5,7 @@ import {
   SubscriptionManager,
   allHandlers as coreHandlers,
   defaultLogger,
-} from '@acala-network/chopsticks-core'
+} from '@systemfsoftware/chopsticks-core'
 
 import { getRpcExtensionMethods, loadRpcExtensionMethod } from '../plugins/index.js'
 

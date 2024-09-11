@@ -1,5 +1,5 @@
 import { Argv } from 'yargs'
-import { pinoLogger } from '@acala-network/chopsticks-core'
+import { pinoLogger } from '@systemfsoftware/chopsticks-core'
 import { writeFileSync } from 'fs'
 import { z } from 'zod'
 import _ from 'lodash'

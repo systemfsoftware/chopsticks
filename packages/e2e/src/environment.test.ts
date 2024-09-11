@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { environment, environmentSchema } from '@acala-network/chopsticks-core'
+import { environment, environmentSchema } from '@systemfsoftware/chopsticks-core'
 
 describe('environment', () => {
   it('defaults are correct', async () => {

@@ -1,4 +1,4 @@
-import { Handlers, environment } from '@acala-network/chopsticks-core'
+import { Handlers, environment } from '@systemfsoftware/chopsticks-core'
 import { lstatSync, readFileSync, readdirSync } from 'fs'
 import _ from 'lodash'
 import type { Argv } from 'yargs'

@@ -5,7 +5,7 @@ import _ from 'lodash'
 import yargs from 'yargs'
 import type { MiddlewareFunction } from 'yargs'
 
-import { Blockchain, connectParachains, connectVertical, environment } from '@acala-network/chopsticks-core'
+import { Blockchain, connectParachains, connectVertical, environment } from '@systemfsoftware/chopsticks-core'
 import { configSchema, fetchConfig, getYargsOptions } from './schema/index.js'
 import { loadRpcMethodsByScripts, pluginExtendCli } from './plugins/index.js'
 import { setupWithServer } from './index.js'

@@ -1,4 +1,4 @@
-const { setupWithServer, destroyWorker } = require('@acala-network/chopsticks')
+const { setupWithServer, destroyWorker } = require('@systemfsoftware/chopsticks')
 
 async function main() {
 	const server = await setupWithServer({

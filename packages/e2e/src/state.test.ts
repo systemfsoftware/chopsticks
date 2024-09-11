@@ -1,7 +1,7 @@
 import { HexString } from '@polkadot/util/types'
 import { describe, expect, it } from 'vitest'
 import { readFileSync } from 'node:fs'
-import { runTask, taskHandler } from '@acala-network/chopsticks-core'
+import { runTask, taskHandler } from '@systemfsoftware/chopsticks-core'
 import path from 'node:path'
 
 import { api, chain, check, checkHex, env, mockCallback, setupApi, testingPairs } from './helper.js'

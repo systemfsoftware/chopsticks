@@ -1,4 +1,4 @@
-import { BuildBlockMode } from '@acala-network/chopsticks-core'
+import { BuildBlockMode } from '@systemfsoftware/chopsticks-core'
 import { writeFileSync } from 'node:fs'
 import { z } from 'zod'
 import type { Argv } from 'yargs'

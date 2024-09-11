@@ -8,9 +8,9 @@ import {
   environment,
   fetchConfig,
   setupWithServer,
-} from '@acala-network/chopsticks'
+} from '@systemfsoftware/chopsticks'
 import { Codec } from '@polkadot/types/types'
-import { Config } from '@acala-network/chopsticks/schema/index.js'
+import { Config } from '@systemfsoftware/chopsticks/schema/index.js'
 import { HexString } from '@polkadot/util/types'
 import { Keyring, createTestKeyring } from '@polkadot/keyring'
 import { SubmittableExtrinsic } from '@polkadot/api-base/types'

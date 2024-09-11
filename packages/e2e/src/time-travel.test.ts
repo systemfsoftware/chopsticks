@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { getCurrentTimestamp, getSlotDuration } from '@acala-network/chopsticks-core/utils/index.js'
-import { timeTravel } from '@acala-network/chopsticks-core/utils/time-travel.js'
+import { getCurrentTimestamp, getSlotDuration } from '@systemfsoftware/chopsticks-core/utils/index.js'
+import { timeTravel } from '@systemfsoftware/chopsticks-core/utils/time-travel.js'
 
 import networks from './networks.js'
 

@@ -1,4 +1,4 @@
-import { Block } from '@acala-network/chopsticks-core'
+import { Block } from '@systemfsoftware/chopsticks-core'
 import { HexString } from '@polkadot/util/types'
 import { decodeStorageDiff } from './decoder.js'
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'

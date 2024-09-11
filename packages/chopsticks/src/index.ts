@@ -1,5 +1,5 @@
 import '@polkadot/api-augment'
 
-export * from '@acala-network/chopsticks-core'
+export * from '@systemfsoftware/chopsticks-core'
 export { setupWithServer } from './setup-with-server.js'
 export { fetchConfig } from './schema/index.js'

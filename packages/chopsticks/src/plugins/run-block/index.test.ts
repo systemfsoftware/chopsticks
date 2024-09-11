@@ -1,6 +1,6 @@
-import { SqliteDatabase } from '@acala-network/chopsticks-db'
+import { SqliteDatabase } from '@systemfsoftware/chopsticks-db'
 import { describe, expect, it } from 'vitest'
-import { setup } from '@acala-network/chopsticks-core'
+import { setup } from '@systemfsoftware/chopsticks-core'
 
 import { rpc } from './index.js'
 

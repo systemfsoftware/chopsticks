@@ -10,17 +10,17 @@ Create parallel reality of your Substrate network.
 
 ## Quick Start
 
-Fork Acala mainnet: `npx @acala-network/chopsticks@latest --endpoint=wss://acala-rpc-2.aca-api.network/ws`
+Fork Acala mainnet: `npx @systemfsoftware/chopsticks@latest --endpoint=wss://acala-rpc-2.aca-api.network/ws`
 
 It is recommended to use config file. You can check [configs](configs/) for examples.
 
 Run node using config file
 
 ```bash
-# npx @acala-network/chopsticks@latest --config= url | path | config_file_name
+# npx @systemfsoftware/chopsticks@latest --config= url | path | config_file_name
 # i.e: using configs/acala.yml
 
-npx @acala-network/chopsticks@latest -c acala
+npx @systemfsoftware/chopsticks@latest -c acala
 ```
 
 ## Wiki
@@ -55,7 +55,7 @@ Make sure you have setup Rust environment (>= 1.64).
 ## Run
 
 - Replay latest block
-  - `npx @acala-network/chopsticks@latest run-block --endpoint=wss://acala-rpc-2.aca-api.network/ws`
+  - `npx @systemfsoftware/chopsticks@latest run-block --endpoint=wss://acala-rpc-2.aca-api.network/ws`
   - This will replay the last block and print out the changed storages
   - Use option `-b|--block` to replay certain block hash
   - Use option `--output-path=<file_path>` to print out JSON file
@@ -65,36 +65,36 @@ Make sure you have setup Rust environment (>= 1.64).
 
 - Dry run help:
  ```
- npx @acala-network/chopsticks@latest dry-run --help
+ npx @systemfsoftware/chopsticks@latest dry-run --help
  ```
 
 - Dry run extrinsic, same as `run-block`, example:
 ```
-npx @acala-network/chopsticks@latest dry-run --config=configs/mandala.yml --html --open --extrinsic=0x39028400d43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d01183abac17ff331f8b65dbeddd27f014dedd892020cfdc6c40b574f6930f8cf391bde95997ae2edc5b1192a4036ea97804956c4b5497175c8d68b630301685889450200000a00008eaf04151687736326c9fea17e25fc5287613693c912909cb226aa4794f26a480284d717
+npx @systemfsoftware/chopsticks@latest dry-run --config=configs/mandala.yml --html --open --extrinsic=0x39028400d43593c715fdd31c61141abd04a99fd6822c8558854ccde39a5684e7a56da27d01183abac17ff331f8b65dbeddd27f014dedd892020cfdc6c40b574f6930f8cf391bde95997ae2edc5b1192a4036ea97804956c4b5497175c8d68b630301685889450200000a00008eaf04151687736326c9fea17e25fc5287613693c912909cb226aa4794f26a480284d717
 ```
 
 - Dry run call, make sure `mock-signature-host: true` to fake caller's signature:
 ```
-npx @acala-network/chopsticks@latest dry-run --config=configs/mandala.yml --html --open --extrinsic=0xff00000080969800 --address=5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY --at=<block_hash_optional>
+npx @systemfsoftware/chopsticks@latest dry-run --config=configs/mandala.yml --html --open --extrinsic=0xff00000080969800 --address=5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY --at=<block_hash_optional>
 ```
 
 - Dry run a preimage:
  ```
-npx @acala-network/chopsticks@latest dry-run --endpoint=wss://polkadot-rpc.dwellir.com --preimage=<preimage> --open
+npx @systemfsoftware/chopsticks@latest dry-run --endpoint=wss://polkadot-rpc.dwellir.com --preimage=<preimage> --open
  ```
 
 - Dry run a preimage and execute an extrinsic after that:
 ```
-npx @acala-network/chopsticks@latest dry-run --endpoint=wss://polkadot-rpc.dwellir.com --preimage=<preimage> --extrinsic=<extrinsic> --open
+npx @systemfsoftware/chopsticks@latest dry-run --endpoint=wss://polkadot-rpc.dwellir.com --preimage=<preimage> --extrinsic=<extrinsic> --open
 ```
 
 - Dry run a preimage and execute a call after that, make sure `mock-signature-host: true` to fake caller's signature:
  ```
-npx @acala-network/chopsticks@latest dry-run --config=configs/mandala.yml --preimage=<preimage> --extrinsic=<call> --address=<who> --open
+npx @systemfsoftware/chopsticks@latest dry-run --config=configs/mandala.yml --preimage=<preimage> --extrinsic=<call> --address=<who> --open
  ```
 
 - Run a test node
-  - `npx @acala-network/chopsticks@latest --endpoint=wss://acala-rpc-2.aca-api.network/ws`
+  - `npx @systemfsoftware/chopsticks@latest --endpoint=wss://acala-rpc-2.aca-api.network/ws`
   - You have a test node running at `ws://localhost:8000`
   - You can use [Polkadot.js Apps](https://polkadot.js.org/apps/) to connect to this node
   - Submit any transaction to produce a new block in the in parallel reality
@@ -131,13 +131,13 @@ npx @acala-network/chopsticks@latest dry-run --config=configs/mandala.yml --prei
 
 - Run Kusama fork
   - Edit configs/kusama.yml if needed. (e.g. update the block number)
-  - `npx @acala-network/chopsticks@latest --config=configs/kusama.yml`
+  - `npx @systemfsoftware/chopsticks@latest --config=configs/kusama.yml`
 
 - Setup XCM multichain
 **_NOTE:_** You can also connect multiple parachains without a relaychain
 
 ```bash
-npx @acala-network/chopsticks@latest xcm -r kusama -p karura -p statemine
+npx @systemfsoftware/chopsticks@latest xcm -r kusama -p karura -p statemine
 ```
 
 ## Proxy
@@ -165,7 +165,7 @@ It loads an **unverified** scripts, making it **unsafe**. Ensure you load a **tr
 
 **example**:
 
-`npx @acala-network/chopsticks@latest --unsafe-rpc-methods=rpc-methods-scripts.js`
+`npx @systemfsoftware/chopsticks@latest --unsafe-rpc-methods=rpc-methods-scripts.js`
 
 **scripts example of rpc-methods-scripts:**
 
@@ -208,7 +208,7 @@ Please note that only the formats mentioned above are supported for config files
 The second way is use `fetch-storages` subcommand to only fetch and cache storages:
 
 ```sh
-npx @acala-network/chopsticks@latest fetch-storages 0x123456 Balances Tokens.Accounts
+npx @systemfsoftware/chopsticks@latest fetch-storages 0x123456 Balances Tokens.Accounts
 	--endpoint=wss://acala-rpc-0.aca-api.network
 	--block=<blockhash> # default to latest block
 	--db=acala.sqlite
